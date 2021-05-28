@@ -1,6 +1,6 @@
 # My Jenkins library
 
-This is my personal Jenkins shared library providing commodity functions for my projects. It's heavily integrated to the CICD setup proposed in [this other project] (https://github.com/fborghesi/cicd).
+This is my personal Jenkins shared library providing commodity functions for my projects. It's heavily integrated to the CICD setup proposed in [this other project](https://github.com/fborghesi/cicd).
 
 
 ## Jenkins set up
