@@ -35,15 +35,15 @@ First of all you'll need to configure your Github account for Jenkins to be able
 
 The following utility functions have been defined
 
-###dockerBuildPush()
+### dockerBuildPush()
 Builds a Docker Image and pushes it to the registry twice, once tagged as <branch_name>-<build_number> and another as 'latest'.
 Params:
  * Projet Path: Registry path where to place the image. That is http://nexus.localdev.net:5000/<project_path>/<project_name>
 
-###getProjectName()
+### getProjectName()
 Gets the actual project name. Specially useful when projects are organized into folders.
 
-###helmDeploy()
+### helmDeploy()
 Deploys a Helm chart from the local nexus repo.
 Params:
  * releaseName: The release name, something meaninfull to the piece of software being released.
@@ -51,10 +51,10 @@ Params:
  * namespace: The kubernetes namespace where to deploy the chart.
 
 
-###helmPush()
+### helmPush()
 Creates a Helm package with the project descriptos and pushes it to the Helm registry.
 Params: 
  * chartDir: Directory where the chart is.
 
-###writeVersionFile()
+### writeVersionFile()
 Writes a file named VERSION in the project's build dir that can be included into the image at build time. The file contains image information that can be usefull at runtime.
